@@ -3,8 +3,8 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 app.get('/',function(req,res)
 {
-  var _dirname ='/home/samson/Desktop/chat-example'
-  res.sendFile(_dirname + '/index.html');
+  //var _dirname ='/home/samson/Desktop/chat-example'
+  res.sendFile('index.html');
 });
 io.on('connection',function(socket)
 {
